@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+/*
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(
+        45deg, 
+        #f7cfd4 20%, 
+        #7ee8fa 80%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Neucha', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    position: relative;
+}
+
+#image-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    display: flex;
+    margin-top: 5px;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: 0;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.action-btn:focus {
+    outline: none;
+}
+
+.action-btn-big {
+    margin-bottom: -3px;
+    font-size: 30px;
+    color: #777;
+}
+
+.music-info {
+    width: 90%;
+    opacity: 0;
+}
+
+.music-info.play {
+    opacity: 1;
+}
+
+.progress-container {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #f7cfd4;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
