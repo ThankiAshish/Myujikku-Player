@@ -100,3 +100,21 @@ h1 {
     width: 0%;
     transition: width 0.1s linear;
 }
+
+#footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#footer a {
+    color: #000;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+#footer a:hover {
+    color: #777
+}
