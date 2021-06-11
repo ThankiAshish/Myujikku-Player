@@ -9,14 +9,6 @@ const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
 
-// Preventing keyboard shortcuts
-document.onkeydown = function(e) {
-    e.preventDefault();
-} 
-
-// Disable image dragging
-document.querySelector('img').draggable = false
-
 // Song Titles
 const songs = [
     'KDA - Drum Go Dum',
@@ -32,13 +24,6 @@ let songIndex = 0
 
 // Initially Load Songs
 loadSong(songs[songIndex])
-
-// Preventing Default
-window.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropogation()
-    return false
-}
 
 // Update song details
 function loadSong(song) {
